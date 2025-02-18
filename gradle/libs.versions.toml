@@ -16,6 +16,7 @@ paypal-android = "2.0.0-beta2"
 appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.10.0"
+stripe = "1.0.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -30,6 +31,7 @@ paypal-android-web = { module = "com.paypal.android:paypal-web-payments", versio
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+k1ra-stripe = { module = "net.k1ra.kotlinmultiplatformstripe:KotlinMultiplatformStripe", version.ref = "stripe" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

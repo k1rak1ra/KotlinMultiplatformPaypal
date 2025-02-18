@@ -92,6 +92,7 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            api(libs.k1ra.stripe)
 
             implementation(libs.k1ra.sharedpref)
         }

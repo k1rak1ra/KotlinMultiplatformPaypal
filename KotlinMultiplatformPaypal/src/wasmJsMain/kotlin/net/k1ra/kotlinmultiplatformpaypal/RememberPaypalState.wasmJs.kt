@@ -20,6 +20,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import net.k1ra.kotlinmultiplatformstripe.HtmlView
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLScriptElement
 
@@ -37,8 +38,6 @@ var addedScript = false
 actual fun RememberPaypalState(resultHandler: PaypalPaymentResultHandler): PaypalState {
     val showSheet = remember { paypalStateInstance.showPaymentSheet }
     val htmlHeight = remember { paypalStateInstance.htmlHeight }
-
-    println("SHOWSHEET VALUE: ${showSheet.value}")
 
     paypalStateInstance.resultHandler = resultHandler
 
