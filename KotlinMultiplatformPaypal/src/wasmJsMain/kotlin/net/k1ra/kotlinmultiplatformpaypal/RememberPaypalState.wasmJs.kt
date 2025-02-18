@@ -1,6 +1,5 @@
 package net.k1ra.kotlinmultiplatformpaypal
 
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -82,10 +81,6 @@ actual fun RememberPaypalState(resultHandler: PaypalPaymentResultHandler): Paypa
                         container
                     }
                 )
-
-                Box(Modifier.height(16.dp))
-
-
             }
         }
     }
