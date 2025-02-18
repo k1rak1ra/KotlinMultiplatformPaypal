@@ -1,0 +1,40 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal////PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//HtmlView/#kotlin.Function1[org.w3c.dom.Document,TypeParam(bounds=[org.w3c.dom.Element])]#androidx.compose.ui.Modifier#kotlin.Function1[TypeParam(bounds=[org.w3c.dom.Element]),kotlin.Unit]/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-html-view.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//LocalLayerContainer/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-local-layer-container.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//NoOpUpdate/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-no-op-update.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//RememberPaypalState/#[Error type: Unresolved type for PaypalPaymentResultHandler]/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-remember-paypal-state.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//RememberPaypalState/#net.k1ra.kotlinmultiplatformpaypal.PaypalPaymentResultHandler/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-remember-paypal-state.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//addedScript/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/added-script.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//delegate/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/delegate.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//getActivity/android.content.Context#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/get-activity.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//globalOrderId/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/global-order-id.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//globalResultHandler/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/global-result-handler.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//makePaypalButtons/#kotlin.String#kotlin.Function0[kotlin.Unit]#kotlin.Function0[kotlin.Unit]#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/make-paypal-buttons.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal//paypalStateInstance/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/paypal-state-instance.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalActivity///PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-activity/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalActivity/PaypalActivity/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-activity/-paypal-activity.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalConfig///PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-config/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalConfig/setup/#kotlin.String#net.k1ra.kotlinmultiplatformpaypal.PaypalEnvironment/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-config/setup.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalEnvironment.LIVE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-environment/-l-i-v-e/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalEnvironment.SANDBOX///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-environment/-s-a-n-d-b-o-x/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalEnvironment///PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-environment/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalEnvironment/entries/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-environment/entries.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalEnvironment/valueOf/#kotlin.String/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-environment/value-of.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalEnvironment/values/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-environment/values.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalPaymentResultHandler///PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-payment-result-handler/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalPaymentResultHandler/onCanceled/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-payment-result-handler/on-canceled.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalPaymentResultHandler/onCompleted/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-payment-result-handler/on-completed.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalPaymentResultHandler/onFailed/#kotlin.Throwable/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-payment-result-handler/on-failed.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState///PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState/PaypalState/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/-paypal-state.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState/PaypalState/#[Error type: Unresolved type for PaypalPaymentResultHandler]/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/-paypal-state.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState/PaypalState/#android.app.Activity#net.k1ra.kotlinmultiplatformpaypal.PaypalPaymentResultHandler/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/-paypal-state.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState/activity/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/activity.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState/htmlHeight/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/html-height.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState/resultHandler/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/[wasm-js]result-handler.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalState/showPaymentSheet/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-state/show-payment-sheet.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalWebCheckout///PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-web-checkout/index.html
+$dokka.location:net.k1ra.kotlinmultiplatformpaypal/PaypalWebCheckout/showCheckout/#kotlin.String#net.k1ra.kotlinmultiplatformpaypal.PaypalState/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-paypal-web-checkout/show-checkout.html
+net.k1ra.kotlinmultiplatformpaypal

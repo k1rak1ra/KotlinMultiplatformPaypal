@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>net.k1ra.kotlinmultiplatformpaypal</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    KotlinMultiplatformPaypal
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button>
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":KotlinMultiplatformPaypal:dokkaHtml/commonMain">common</button>
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":KotlinMultiplatformPaypal:dokkaHtml/iosMain">ios</button>
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain">jvm</button>
+                <button class="platform-tag platform-selector wasm-like" data-active=""
+                        data-filter=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"
+                                       data-filter=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"/>
+                                <span class="checkbox--icon"></span>
+                                android
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"
+                                       data-filter=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":KotlinMultiplatformPaypal:dokkaHtml/iosMain"
+                                       data-filter=":KotlinMultiplatformPaypal:dokkaHtml/iosMain"/>
+                                <span class="checkbox--icon"></span>
+                                ios
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain"
+                                       data-filter=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option wasm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"
+                                       data-filter=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"/>
+                                <span class="checkbox--icon"></span>
+                                wasmJs
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    KotlinMultiplatformPaypal
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="KotlinMultiplatformPaypal::net.k1ra.kotlinmultiplatformpaypal////PointingToDeclaration//1055836289">
+  <div class="breadcrumbs"><a href="../../index.html">KotlinMultiplatformPaypal</a><span class="delimiter">/</span><span class="current">net.k1ra.kotlinmultiplatformpaypal</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-937633866%2FClasslikes%2F-2027373220" anchor-label="PaypalActivity" id="-937633866%2FClasslikes%2F-2027373220" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paypal-activity/index.html"><span>Paypal</span><wbr></wbr><span><span>Activity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-937633866%2FClasslikes%2F-2027373220"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-paypal-activity/index.html">PaypalActivity</a> : <a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html">AppCompatActivity</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1550797853%2FClasslikes%2F1234113726" anchor-label="PaypalConfig" id="-1550797853%2FClasslikes%2F1234113726" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paypal-config/index.html"><span>Paypal</span><wbr></wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1550797853%2FClasslikes%2F1234113726"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-paypal-config/index.html">PaypalConfig</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1788153162%2FClasslikes%2F1234113726" anchor-label="PaypalEnvironment" id="1788153162%2FClasslikes%2F1234113726" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paypal-environment/index.html"><span>Paypal</span><wbr></wbr><span><span>Environment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1788153162%2FClasslikes%2F1234113726"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-paypal-environment/index.html">PaypalEnvironment</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-paypal-environment/index.html">PaypalEnvironment</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="557068222%2FClasslikes%2F1234113726" anchor-label="PaypalPaymentResultHandler" id="557068222%2FClasslikes%2F1234113726" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paypal-payment-result-handler/index.html"><span>Paypal</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Result</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557068222%2FClasslikes%2F1234113726"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-paypal-payment-result-handler/index.html">PaypalPaymentResultHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1906315892%2FClasslikes%2F1055836289" anchor-label="PaypalState" id="-1906315892%2FClasslikes%2F1055836289" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paypal-state/index.html"><span>Paypal</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1906315892%2FClasslikes%2F1055836289"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/iosMain">ios</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain">jvm</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-paypal-state/index.html">PaypalState</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="21188739%2FClasslikes%2F1055836289" anchor-label="PaypalWebCheckout" id="21188739%2FClasslikes%2F1055836289" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paypal-web-checkout/index.html"><span>Paypal</span><wbr></wbr><span>Web</span><wbr></wbr><span><span>Checkout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="21188739%2FClasslikes%2F1055836289"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/iosMain">ios</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain">jvm</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">object </span><a href="-paypal-web-checkout/index.html">PaypalWebCheckout</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">object </span><a href="-paypal-web-checkout/index.html">PaypalWebCheckout</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">object </span><a href="-paypal-web-checkout/index.html">PaypalWebCheckout</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">object </span><a href="-paypal-web-checkout/index.html">PaypalWebCheckout</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">object </span><a href="-paypal-web-checkout/index.html">PaypalWebCheckout</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="450597160%2FProperties%2F-517086235" anchor-label="addedScript" id="450597160%2FProperties%2F-517086235" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="added-script.html"><span>added</span><wbr></wbr><span><span>Script</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="450597160%2FProperties%2F-517086235"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="added-script.html">addedScript</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="326028450%2FProperties%2F1649400230" anchor-label="delegate" id="326028450%2FProperties%2F1649400230" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delegate.html"><span><span>delegate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="326028450%2FProperties%2F1649400230"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/iosMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="delegate.html">delegate</a><span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-311398899%2FProperties%2F-2027373220" anchor-label="globalOrderId" id="-311398899%2FProperties%2F-2027373220" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="global-order-id.html"><span>global</span><wbr></wbr><span>Order</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-311398899%2FProperties%2F-2027373220"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="global-order-id.html">globalOrderId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1600556951%2FProperties%2F-2027373220" anchor-label="globalResultHandler" id="-1600556951%2FProperties%2F-2027373220" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="global-result-handler.html"><span>global</span><wbr></wbr><span>Result</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1600556951%2FProperties%2F-2027373220"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="global-result-handler.html">globalResultHandler</a><span class="token operator">: </span><a href="-paypal-payment-result-handler/index.html">PaypalPaymentResultHandler</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1405016248%2FProperties%2F-517086235" anchor-label="LocalLayerContainer" id="1405016248%2FProperties%2F-517086235" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-local-layer-container.html"><span>Local</span><wbr></wbr><span>Layer</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1405016248%2FProperties%2F-517086235"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-local-layer-container.html">LocalLayerContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/ProvidableCompositionLocal.html">ProvidableCompositionLocal</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/org.w3c.dom/-element/index.html">Element</a><span class="token operator">&gt;</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="478068572%2FProperties%2F-517086235" anchor-label="NoOpUpdate" id="478068572%2FProperties%2F-517086235" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-no-op-update.html"><span>No</span><wbr></wbr><span>Op</span><wbr></wbr><span><span>Update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="478068572%2FProperties%2F-517086235"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-no-op-update.html">NoOpUpdate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/org.w3c.dom/-element/index.html">Element</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1345111552%2FProperties%2F-517086235" anchor-label="paypalStateInstance" id="1345111552%2FProperties%2F-517086235" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="paypal-state-instance.html"><span>paypal</span><wbr></wbr><span>State</span><wbr></wbr><span><span>Instance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1345111552%2FProperties%2F-517086235"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="paypal-state-instance.html">paypalStateInstance</a><span class="token operator">: </span><a href="-paypal-state/index.html">PaypalState</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1165940713%2FFunctions%2F-2027373220" anchor-label="getActivity" id="1165940713%2FFunctions%2F-2027373220" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-activity.html"><span>get</span><wbr></wbr><span><span>Activity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1165940713%2FFunctions%2F-2027373220"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">.</span><a href="get-activity.html"><span class="token function">getActivity</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1176744566%2FFunctions%2F-517086235" anchor-label="HtmlView" id="1176744566%2FFunctions%2F-517086235" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-html-view.html"><span>Html</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1176744566%2FFunctions%2F-517086235"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="-html-view.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/org.w3c.dom/-element/index.html">Element</a><span class="token operator">&gt; </span><a href="-html-view.html"><span class="token function">HtmlView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">factory<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/org.w3c.dom/-document/index.html">Document</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-html-view.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">update<span class="token operator">: </span><span class="token punctuation">(</span><a href="-html-view.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>NoOpUpdate</span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2066007962%2FFunctions%2F-517086235" anchor-label="makePaypalButtons" id="-2066007962%2FFunctions%2F-517086235" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="make-paypal-buttons.html"><span>make</span><wbr></wbr><span>Paypal</span><wbr></wbr><span><span>Buttons</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2066007962%2FFunctions%2F-517086235"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="make-paypal-buttons.html"><span class="token function">makePaypalButtons</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">orderId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">onApprove<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter ">onCancel<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter ">onError<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1717534298%2FFunctions%2F1055836289" anchor-label="RememberPaypalState" id="1717534298%2FFunctions%2F1055836289" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain,:KotlinMultiplatformPaypal:dokkaHtml/commonMain,:KotlinMultiplatformPaypal:dokkaHtml/androidMain,:KotlinMultiplatformPaypal:dokkaHtml/jvmMain,:KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-remember-paypal-state.html"><span>Remember</span><wbr></wbr><span>Paypal</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1717534298%2FFunctions%2F1055836289"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/androidMain" data-active="" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/commonMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/iosMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/iosMain">ios</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain">jvm</button><button class="platform-bookmark" data-filterable-current=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-filterable-set=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain" data-toggle=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/androidMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="-remember-paypal-state.html"><span class="token function">RememberPaypalState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resultHandler<span class="token operator">: </span><a href="-paypal-payment-result-handler/index.html">PaypalPaymentResultHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">expect </span><span class="token keyword">fun </span><a href="-remember-paypal-state.html"><span class="token function">RememberPaypalState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resultHandler<span class="token operator">: </span><a href="-paypal-payment-result-handler/index.html">PaypalPaymentResultHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="-remember-paypal-state.html"><span class="token function">RememberPaypalState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resultHandler<span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/jvmMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="-remember-paypal-state.html"><span class="token function">RememberPaypalState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resultHandler<span class="token operator">: </span><a href="-paypal-payment-result-handler/index.html">PaypalPaymentResultHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-paypal-state/index.html">PaypalState</a></div></div><div class="content sourceset-dependent-content" data-togglable=":KotlinMultiplatformPaypal:dokkaHtml/wasmJsMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="-remember-paypal-state.html"><span class="token function">RememberPaypalState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resultHandler<span class="token operator">: </span><a href="-paypal-payment-result-handler/index.html">PaypalPaymentResultHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-paypal-state/index.html">PaypalState</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
