@@ -7,16 +7,18 @@ import kotlinx.coroutines.launch
 
 actual object PaypalWebCheckout {
     actual fun showCheckout(orderId: String, paypalState: PaypalState) {
-        paypalStateInstance.showPaymentSheet.value = true
+        if (!paypalStateInstance.showPaymentSheet.value) {
+            paypalStateInstance.showPaymentSheet.value = true
 
-        CoroutineScope(Dispatchers.Main).launch {
-            delay(100)
-            makePaypalButtons(
-                orderId,
-                onApprove = { paypalState.resultHandler.onCompleted() },
-                onCancel = { paypalState.resultHandler.onCanceled() },
-                onError =  { paypalState.resultHandler.onFailed(Exception()) }
-            )
+            CoroutineScope(Dispatchers.Main).launch {
+                delay(100)
+                makePaypalButtons(
+                    orderId,
+                    onApprove = { paypalState.resultHandler.onCompleted() },
+                    onCancel = { paypalState.resultHandler.onCanceled() },
+                    onError = { paypalState.resultHandler.onFailed(Exception()) }
+                )
+            }
         }
     }
 }
