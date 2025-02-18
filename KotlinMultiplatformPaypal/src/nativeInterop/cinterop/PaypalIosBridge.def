@@ -1,0 +1,4 @@
+language = Objective-C
+package = PaypalIosBridge
+headers = Headers/PaypalIosBridge-Swift.h Headers/PaypalIosBridge.h
+staticLibraries = libPaypalIosBridge.a
