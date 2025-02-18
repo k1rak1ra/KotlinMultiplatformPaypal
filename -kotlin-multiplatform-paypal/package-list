@@ -1,9 +1,6 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:net.k1ra.kotlinmultiplatformpaypal////PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/index.html
-$dokka.location:net.k1ra.kotlinmultiplatformpaypal//HtmlView/#kotlin.Function1[org.w3c.dom.Document,TypeParam(bounds=[org.w3c.dom.Element])]#androidx.compose.ui.Modifier#kotlin.Function1[TypeParam(bounds=[org.w3c.dom.Element]),kotlin.Unit]/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-html-view.html
-$dokka.location:net.k1ra.kotlinmultiplatformpaypal//LocalLayerContainer/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-local-layer-container.html
-$dokka.location:net.k1ra.kotlinmultiplatformpaypal//NoOpUpdate/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-no-op-update.html
 $dokka.location:net.k1ra.kotlinmultiplatformpaypal//RememberPaypalState/#[Error type: Unresolved type for PaypalPaymentResultHandler]/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-remember-paypal-state.html
 $dokka.location:net.k1ra.kotlinmultiplatformpaypal//RememberPaypalState/#net.k1ra.kotlinmultiplatformpaypal.PaypalPaymentResultHandler/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/-remember-paypal-state.html
 $dokka.location:net.k1ra.kotlinmultiplatformpaypal//addedScript/#/PointingToDeclaration/-kotlin-multiplatform-paypal/net.k1ra.kotlinmultiplatformpaypal/added-script.html
