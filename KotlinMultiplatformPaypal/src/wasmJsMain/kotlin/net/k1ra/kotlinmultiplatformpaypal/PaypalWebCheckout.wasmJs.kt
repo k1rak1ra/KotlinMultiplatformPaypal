@@ -10,7 +10,7 @@ actual object PaypalWebCheckout {
         paypalState.showPaymentSheet.value = true
 
         CoroutineScope(Dispatchers.Main).launch {
-            delay(100)
+            delay(500)
             makePaypalButtons(
                 orderId,
                 onApprove = { paypalState.resultHandler.onCompleted() },
