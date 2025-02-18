@@ -7,10 +7,10 @@ import kotlinx.coroutines.launch
 
 actual object PaypalWebCheckout {
     actual fun showCheckout(orderId: String, paypalState: PaypalState) {
-        paypalState.showPaymentSheet.value = true
+        paypalStateInstance.showPaymentSheet.value = true
 
         CoroutineScope(Dispatchers.Main).launch {
-            delay(500)
+            delay(100)
             makePaypalButtons(
                 orderId,
                 onApprove = { paypalState.resultHandler.onCompleted() },
