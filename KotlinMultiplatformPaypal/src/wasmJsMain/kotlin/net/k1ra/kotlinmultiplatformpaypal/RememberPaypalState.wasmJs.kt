@@ -38,6 +38,8 @@ actual fun RememberPaypalState(resultHandler: PaypalPaymentResultHandler): Paypa
     val showSheet = remember { paypalStateInstance.showPaymentSheet }
     val htmlHeight = remember { paypalStateInstance.htmlHeight }
 
+    println("SHOWSHEET VALUE: ${showSheet.value}")
+
     paypalStateInstance.resultHandler = resultHandler
 
     if (!addedScript) {
